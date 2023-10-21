@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Golos Text;
+  color: black;
+}
+
+.pale-text {
+  color: #808080;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  width: min-content;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  padding: 25px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__button {
+  display: flex;
+  width: 163px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: none;
+  background: var(--Blue, linear-gradient(96deg, #007AFF 10.74%, #0038FF 90.06%));
+  color: #FFF;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 45px;
+}
+
+.header__image {
+  width: 50px;
+  height: 50px;
+}
+
+.main {
+  flex: 1 0 auto;
+  /* margin-top: 100px; */
+}
+
+/* PROFILE */
+.profile-card {
+  display: grid;
+  column-gap: 200px;
+  margin: 100px 0;
+  grid-template-columns: 1fr 2fr;
+}
+
+.profile-card__image {
+  width: 305px;
+  height: 305px;
+}
+
+.profile-card__text {
+  display: grid;
+  row-gap: 12px;
+}
+
+.profile-card__title {
+  margin: 0 0 20px 0;
+  font-size: 100px;
+  line-height: 95px;
+  letter-spacing: -5px;
+}
+
+.profile-card__subheader {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: -1.25px;
+}
+
+/* CONTENT */
+.content {
+  display: grid;
+  gap: 80px 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.content-card {
+  width: 745px;
+  max-height: 500px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: unset;
+}
+
+.content-card__image {
+  border-radius: 20px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.content-card__text {
+  width: 100%;
+}
+
+.content-card__title {
+  margin: 0 0 4px 0;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: -2.5px;
+}
+
+.content-card__sub {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.content-card__desc {
+  margin: 0;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.content-card__desc:last-child {
+  margin-top: 12px;
+}
+
+/* FOOTER */
+.footer {
+  flex: 0 0 auto;
+  margin: 80px 0 60px 0;
+}
+
+.footer__alt {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+.footer__regular {
+  margin: 20px 0 60px 0;
+}
+
+.footer__regular>a {
+  text-decoration: none;
+  color: #000;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -1.5px;
+}
+
+.footer__text {
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -1px;
+}
+
+/* MEDIA */
+@media (width < 1280px) {
+  .profile-card {
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (1280px <=width < 1720px) {
+  .content-card {
+    width: 575px;
+  }
+
+  .profile-card__image {
+    width: 255px;
+    height: 255px;
+  }
+}
+
+@media (width < 1280px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+
+  .header__button {
+    width: 130px;
+    height: 40px;
+    border-radius: 16px;
+    font-size: 24px;
+  }
+
+  .header__image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-card {
+    row-gap: 50px;
+    margin: 50px 0;
+  }
+
+  .profile-card__image {
+    width: 205px;
+    height: 205px;
+  }
+
+  .content {
+    row-gap: 60px;
+  }
+
+  .content-card__title {
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: -1.75px;
+  }
+
+  .content-card__desc {
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -0.75px;
+  }
+
+  .footer__regular {
+    margin-bottom: 40px;
+  }
+
+  .footer__regular>a {
+    font-size: 25px;
+    line-height: 35px;
+    letter-spacing: -1.25px;
+  }
+}
+
+@media (width < 768) {
+  .header__button {
+    width: 98px;
+    height: 30px;
+    border-radius: 12px;
+    font-size: 18px;
+  }
+
+  .header__image {
+    width: 30px;
+    height: 30px;
+  }
+
+  .profile-card {
+    margin: 25px 0 50px 0;
+    row-gap: 25px;
+  }
+
+  .content-card__title {
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: -1.25px;
+  }
+
+  .footer__regular>a {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -1px;
+  }
+}
