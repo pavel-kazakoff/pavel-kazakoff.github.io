@@ -113,12 +113,14 @@ body {
   color: unset;
 }
 
+
 .content-card__image {
   border-radius: 20px;
   margin-bottom: 20px;
   object-fit: cover;
   overflow: hidden;
 }
+
 
 .content-card__text {
   width: 100%;
@@ -131,6 +133,11 @@ body {
   line-height: 50px;
   letter-spacing: -2.5px;
 }
+
+.content-card__title:hover {
+  color: #0038FF;
+}
+
 
 .content-card__sub {
   margin: 0 0 12px 0;
@@ -186,8 +193,18 @@ body {
     grid-template-columns: 1fr;
   }
 
+  .profile-card__title {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -4px;
+  }
+
   .content {
     grid-template-columns: 1fr;
+  }
+
+  .content-card {
+    width: 100%;
   }
 }
 
@@ -272,6 +289,12 @@ body {
   .profile-card {
     margin: 25px 0 50px 0;
     row-gap: 25px;
+  }
+
+  .profile-card__title {
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -2.5px;
   }
 
   .content-card__title {
