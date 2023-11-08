@@ -113,9 +113,9 @@ body {
   color: unset;
 }
 
-.content-card:hover .content-card__title {
+/* .content-card:hover .content-card__title {
   color: #0038FF;
-}
+} */
 
 .content-card__image {
   border-radius: 20px;
@@ -178,6 +178,10 @@ body {
   line-height: 40px;
   letter-spacing: -1.5px;
 }
+
+.footer__regular>a:hover {
+  color: #0038FF;
+} 
 
 .footer__text {
   font-size: 20px;
