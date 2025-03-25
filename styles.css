@@ -68,9 +68,9 @@ body {
 /* PROFILE */
 .profile-card {
   display: grid;
-  column-gap: 200px;
-  margin: 100px 0;
-  grid-template-columns: 1fr 2fr;
+  /*column-gap: 200px;*/
+  margin: 80px 0;
+  grid-template-columns: 1fr 3fr;
 }
 
 .profile-card__image {
@@ -91,8 +91,8 @@ body {
 }
 
 .profile-card__subheader {
-  font-size: 25px;
-  line-height: 25px;
+  font-size: 20px;
+  line-height: 20px;
   letter-spacing: -1.25px;
 }
 
@@ -191,9 +191,9 @@ body {
 
 /* MEDIA */
   .profile-card__title {
-    font-size: 80px;
-    line-height: 80px;
-    letter-spacing: -4px;
+    font-size: 47px;
+    line-height: 57px;
+    letter-spacing: -2px;
   }
 
   .profile-card__image {
